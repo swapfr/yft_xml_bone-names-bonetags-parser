@@ -26,15 +26,8 @@ for i, line in enumerate(arr1):
         str_a = f"{name} = {tag}"
         arr_result.append(str_a)
 
-for a in arr_result:
-    count = 0
-    for b in arr_result:
-        if a == b:
-            count += 1
-            if count > 1:
-                arr_result.remove(b)
-                print("hui")
-
+arr_result = list(set(arr_result))
+                
 print("="*30)
 
 for elem in arr_result:
