@@ -27,7 +27,9 @@ for i, line in enumerate(arr1):
         arr_result.append(str_a)
 
 arr_result = list(set(arr_result))
-                
+arr_result.sort()
+
+
 print("="*30)
 
 for elem in arr_result:
